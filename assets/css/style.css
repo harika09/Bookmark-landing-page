@@ -36,7 +36,7 @@ li{
 
 a{
     text-decoration: none;
-    color: #111;
+    color: var(--Very-Dark-Blue);
     font-size: 1rem;
 
 }
@@ -145,13 +145,9 @@ header li .login:hover{
     margin-bottom: 40px;
 }
 
-.banner-text .button{
-    display: flex;
-    gap: 20px;
-}
 
-.banner-text .button a{
-    display: block;
+
+.banner-text  a{
     padding: 15px;
     width: 30%;
     background-color: #F1F1F4;
@@ -160,9 +156,10 @@ header li .login:hover{
     font-size: .8rem;
     color: var(--Very-Dark-Blue);
     box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+    margin-right: 15px;
 }
 
-.banner-text .button .chrome{
+.banner-text .chrome{
     background-color: var(--Soft-Blue);
     color: #fff;
 }
@@ -304,7 +301,7 @@ header li .login:hover{
     height: auto;
 }
   
- .content-text .more-info{ /* Anchor button */
+.more-info{ /* Anchor button */
         padding: 15px;
         width: 100%;
         background-color: var(--Soft-Blue);
@@ -318,30 +315,35 @@ header li .login:hover{
 
 /* ========== Extension Section ========== */
 .extension-container{
-    margin-top: 140px;
+    margin-top: 100px;
 }
 
 .extension-browser{
     display: grid;
-    grid-gap: 50px;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
 }
 
+.extension-text .text{
+    margin-bottom: 10px;
+}
+
 .browser{
-    width: 100%;
+    width: 80%;
     border-radius: 10px;
     padding: 10px;
     background-color: #fff;
     box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.3);
     text-align: center;
-    position: relative;
+    margin: 0 auto 20px auto;
 
 }
 
+
+
 .extension-browser .browser img{
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 30px;
     max-width: 100%;
 }
@@ -353,7 +355,7 @@ header li .login:hover{
 
 .extension-browser .browser p{
     font-size: .8rem;
-    margin-bottom: 20px;
+
 }
 
 .extension-browser .browser .dots{
@@ -382,7 +384,7 @@ header li .login:hover{
 }
 
 .extension-browser .firefox{
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 .extension-browser .opera{
@@ -400,20 +402,161 @@ header li .login:hover{
 
 .questions{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    max-width: 550px;
+    margin: 15px auto;
+    color: var(--Very-Dark-Blue);
+}
+
+.border-line{
+    border-style: solid;
+    border-width: thin;
+    max-width: 550px;
+    margin: 0 auto 10px auto;
+    border-color: var(--Grayish-Blue);
 }
 
 .answer{
     width: 50%;
     margin: auto;
-    margin-top: 10px;
-    text-align: center;
+    margin-top: 21px;
+    margin-bottom: 10px;
     display: none;
+}
+
+.questions-container .more-info{
+    
+    display: block;
+    max-width: 100px;
+    margin: 50px auto;
 }
 /* ========== FAQ Section END ========== */
 
+/* ========== Up to date Section ========== */
+.up-to-date-container{
+    margin-top: 80px;
+    background-color: var(--Soft-Blue);
+}
+
+.up-to-date-content{
+    color: #fff;
+    text-align: center;
+    padding: 60px;
+}
+
+.up-to-date-content span{
+    display: block;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.up-to-date-content h2{
+    font-size: 2rem;
+    width: 450px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.validation-container{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: left;
+}
+
+/* .validation-email{
+    background-color: var(--Soft-Red);
+    padding: 3px;
+    border-radius: 5px;
+} */
+
+
+.validation-email input[type="email"]{ /* Error Icon Parent */
+    position: relative;
+}
+
+.validation-email #email{
+    width: 350px;
+    max-width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+
+
+.validation-email .error{ /* Error Icon */
+    position: relative;
+    z-index: 2;
+    bottom: 26px;
+    float: right;
+    margin-right: 10px;
+    display: none;
+}
+
+.validation-btn .more-info{
+    display: block;
+    border: none;
+    outline: none;
+    padding: 10px 25px;
+    background-color: var(--Soft-Red);
+}
+
+.validation-btn .more-info:hover{
+    background-color: white;
+    color: var(--Soft-Red);
+    border: 1px solid var(--Soft-Red);
+}
+
+/* ========== Up to date Section END ========== */
+
+/* ========== Footer Section ========== */
+.footer-container{
+    background-color: var(--Very-Dark-Blue);
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.footer-left{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-left  img{
+    width: 180px;
+    max-width: 100%;
+}
+
+.footer-left .nav-menu li a{
+    color: #fff;
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+.footer-left .nav-menu li a:hover{
+    color: var(--Soft-Red);
+}
+
+.footer-right i{
+    font-size: 2rem;
+    color: #fff;
+    margin-right: 50px;
+}
+
+.footer-right i:hover{
+    color: var(--Soft-Red);
+}
+
+/* ========== Footer Section END ========== */
 
 
 
@@ -571,6 +714,81 @@ header li .login:hover{
     }
     
     /* ========== Extension Section END ========== */
+
+
+    /* ========== FAQ Section ========== */
+    .answer{
+        width: 100%;
+        margin: auto;
+    }
+    /* ========== FAQ Section END ========== */
+
+    /* ========== Up to date Section ========== */
+    .up-to-date-content{
+        color: #fff;
+        text-align: center;
+        padding: 40px 10px;
+    }
+
+    .up-to-date-content span{
+       font-size: 1rem;
+       letter-spacing: 2px;
+    }
+    
+    .up-to-date-content h2{
+        font-size: 1.5rem;
+        width: 100%;
+        margin: auto;
+    }
+
+    .validation-container{
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .validation-email #email{
+        width: 100%;
+    }
+
+/* ========== Up to date Section END ========== */
+
+    /* ========== Footer Section ========== */
+    .footer-container{
+        background-color: var(--Very-Dark-Blue);
+    }
+    
+
+    .footer-content, .footer-left, .footer-left .nav-menu{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-left img{
+        margin-bottom: 20px;
+    }
+
+    .footer-left .nav-menu li{
+        margin: 20px;
+        text-align: center;
+        font-weight: 100;
+    }
+
+    .footer-left .nav-menu li a{
+        font-size: 1.4rem;
+    }
+    .footer-right{
+        text-align: center;
+    }
+
+    .footer-right i{
+        margin: 30px;
+    }
+
+/* ========== Footer Section END ========== */
+    
 }
 
 @media (max-width: 600px){
