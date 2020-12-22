@@ -23,52 +23,60 @@ window.addEventListener('scroll', function(){
 
 
 
-let btnIMG = document.getElementById('arrow');
-let btnIMG1 = document.getElementById('arrow1');
-let btnIMG2= document.getElementById('arrow2');
-let btnIMG3 = document.getElementById('arrow3');
+var question1 = document.getElementById('question1');
+var question2 = document.getElementById('question2');
+var question3= document.getElementById('question3');
+var question4 = document.getElementById('question4');
+
+let img1 = document.getElementById('arrow');
+let img2 = document.getElementById('arrow1');
+let img3 = document.getElementById('arrow2');
+let img4 = document.getElementById('arrow3');
+
 let div1 = document.getElementById('answer');
 let div2 = document.getElementById('answer2');
 let div3= document.getElementById('answer3');
 let div4 = document.getElementById('answer4');
 
-btnIMG.addEventListener('click', ()=> {
+question1.addEventListener('click', ()=> {
     if(div1.style.display == 'block'){
         div1.style.display = "none"
-        btnIMG.style.transform ="rotate(360deg)";
+        img1.style.transform ="rotate(360deg)";
+        console.log('hide')
     } else {
         div1.style.display = "block"
-        btnIMG.style.transform="rotate(180deg)";
+       img1.style.transform="rotate(180deg)";
+       console.log('show')
     }
 }); 
 
-btnIMG1.addEventListener('click', ()=> {
+question2.addEventListener('click', ()=> {
     if(div2.style.display == 'block'){
         div2.style.display = "none"
-        btnIMG1.style.transform ="rotate(360deg)";
+        img2.style.transform ="rotate(360deg)";
     } else {
         div2.style.display = "block"
-        btnIMG1.style.transform="rotate(180deg)";
+        img2.style.transform="rotate(180deg)";
     }
 }); 
 
-btnIMG2.addEventListener('click', ()=> {
+question3.addEventListener('click', ()=> {
     if(div3.style.display == 'block'){
         div3.style.display = "none"
-        btnIMG2.style.transform ="rotate(360deg)";
+        img3.style.transform ="rotate(360deg)";
     } else {
         div3.style.display = "block"
-        btnIMG2.style.transform="rotate(180deg)";
+        img3.style.transform="rotate(180deg)";
     }
 }); 
 
-btnIMG3.addEventListener('click', ()=> {
+question4.addEventListener('click', ()=> {
     if(div4.style.display == 'block'){
         div4.style.display = "none"
-        btnIMG3.style.transform ="rotate(360deg)";
+        img4.style.transform ="rotate(360deg)";
     } else {
         div4.style.display = "block"
-        btnIMG3.style.transform="rotate(180deg)";
+        img4.style.transform="rotate(180deg)";
     }
 }); 
 
