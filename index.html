@@ -11,6 +11,9 @@
     <!--==== Icon ====-->
     <link rel="icon" href="/assets/img/favicon-32x32.png" type="image/x-icon">
 
+    <!--==== Box Icons ====-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
     <!--========== Header ==========-->
@@ -37,10 +40,10 @@
                     <p>A clean and simple interface to organize your favourite websites. Open a new 
                         browser tab and see your sites load instantly. Try it for free.</p>
 
-                          <div class="button">
+                          
                             <a href="#/" class="chrome">Get it on Chrome</a>
                             <a href="#/" class="firefox">Get it on Firefox</a>
-                          </div>
+                         
                 </div>
 
                 <div class="banner-img">
@@ -180,39 +183,112 @@
                 </div>
 
                 <div class="questions-container">
+                    <div class="border-line"></div>
                     <div class="questions">
                         <h4>What is Bookmark?</h4>
-                        <img  onclick="shows()" src="/assets/img/icon-arrow.svg" alt="icon-arrow">
+                        <img id="arrow" src="/assets/img/icon-arrow.svg" alt="icon-arrow">
                     </div>
 
                     <div id="answer" class="answer" >
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
                             justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
                     </div>
-                </div>
-
-
-                <div class="questions-container">
-                    <div class="test">
+                    
+                    <div class="border-line"></div>
                         <div class="questions">
-                            <h4>What is Bookmark?</h4>
-                            <img  onclick="shows()" src="/assets/img/icon-arrow.svg" alt="icon-arrow">
+                            <h4>How can I request a new browser?</h4>
+                            <img id="arrow1"  src="/assets/img/icon-arrow.svg" alt="icon-arrow">
                         </div>
-                    </div>
+                    
 
                     <div id="answer2" class="answer" >
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
-                            justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+                        <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+                            Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+                            ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+                            Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
                     </div>
+
+                    <div class="border-line"></div>
+                    <div class="questions">
+                        <h4>Is there a mobile app?</h4>
+                        <img id="arrow2" src="/assets/img/icon-arrow.svg" alt="icon-arrow">
+                    </div>
+
+                    <div id="answer3" class="answer" >
+                        <p> Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+                            urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+                            sollicitudin ex et ultricies bibendum.</p>
+                    </div>
+
+                    <div class="border-line"></div>
+                    <div class="questions">
+                        <h4> What about other Chromium browsers?</h4>
+                        <img id="arrow3" src="/assets/img/icon-arrow.svg" alt="icon-arrow">
+                    </div>
+
+                    <div id="answer4" class="answer" >
+                        <p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+                            vitae neque eget nisl gravida pellentesque non ut velit.</p>
+                    </div>
+                    <div class="border-line"></div>
+
+                    <a href="#/" class="more-info">More info</a>
+               
                 </div>
                 
             </div>
         </section>
-
         <!--========== FAQ Section END ==========-->
-    </main>
-    
 
+
+        <!--========== Up to date Section ==========-->
+        <section class="up-to-date-container">
+            <div class="up-to-date-content bd-container">
+
+                <span>35,000+ already joined</span>
+                <h2>Stay up-to-date with what we’re doing</h2>
+
+               <div class="validation-container">
+                   <div class="validation-email" id="invalid">
+                       <input type="email" id="email" placeholder="Enter your email here...">
+                       <br>
+                       <img class="error" src="/assets/img/icon-error.svg" alt="icon-error">
+                       <em id="error-text"></em>
+                   </div>
+
+                   <div class="validation-btn">
+                       <a href="#/" class="more-info" onclick="validation()" >Contact Us</a>
+                   </div>
+               </div>
+            </div>
+        </section>
+        <!--========== Up to date Section END ==========-->
+    </main>
+
+    <footer class="footer-container">
+        <div class="footer-content bd-container">
+            <div class="footer-left">
+              <img src="/assets/img/logo-bookmark-white.svg" alt="logo">
+                <ul class="nav-menu">
+                    <li><a href="#/">Features</a></li>
+                    <li><a href="#/">Pricing</a></li>
+                    <li><a href="#/">Contact</a></li>
+                    <li><a href="#/" class="login">Login</a></li>
+                </ul>
+            </div>
+
+                <div class="footer-right">
+                    <i class='bx bxl-facebook-square'></i>
+                    <i class='bx bxl-twitter' ></i>
+                </div>
+            
+        </div>
+    </footer>
+    
+    <!-- ==== Main Js ==== -->
     <script src="/assets/js/app.js"></script>
+    
+    <!-- ==== Sweet Alert ====-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </body>
 </html>
