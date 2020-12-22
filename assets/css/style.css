@@ -213,6 +213,10 @@ header li .login:hover{
     margin: 0 auto;
   }
 
+ .wrapper input[type="radio"]{
+     position: relative;
+ } 
+
   .wrapper .feature-tab label{
     display: block;
     height: 100%;
@@ -220,7 +224,6 @@ header li .login:hover{
     text-align: center;
     line-height: 50px;
     cursor: pointer;
-    position: relative;
     z-index: 1;
     color: #111;
     font-size: 17px;
@@ -248,6 +251,11 @@ header li .login:hover{
     background: var(--Soft-Red);
     transition: all 0.3s ease;
   }
+
+  .feature-tab .border-line{
+      display: none;
+  }
+
   input[type="radio"]{
     display: none;
   }
@@ -340,8 +348,6 @@ header li .login:hover{
 
 }
 
-
-
 .extension-browser .browser img{
     margin-top: 20px;
     margin-bottom: 30px;
@@ -355,7 +361,6 @@ header li .login:hover{
 
 .extension-browser .browser p{
     font-size: .8rem;
-
 }
 
 .extension-browser .browser .dots{
@@ -407,6 +412,10 @@ header li .login:hover{
     max-width: 550px;
     margin: 15px auto;
     color: var(--Very-Dark-Blue);
+}
+
+.questions img{
+    cursor: pointer;
 }
 
 .border-line{
@@ -666,21 +675,30 @@ header li .login:hover{
 
 
     .feature-tab .slider{
-        width: 100%;
-        position: absolute;
+        width: 60%;
     }
 
-  
+    .feature-tab .border-line{
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+
+    #bookmark:checked ~ .feature-tab .slider{
+        bottom: -12px;
+        left: 95px;
+    }
     #search:checked ~ .feature-tab .slider{
-        bottom: -45px;
-        left: 3px;
+        bottom: -75px;
+        left: 95px;
     }
      #share:checked ~ .feature-tab .slider{
-        bottom: -95px;
-        left: 3px;
+        bottom: -138px;
+        left: 95px;
     }
+
     .feature-content {
-          margin-top: 120px;
+          margin-top: 180px;
     }
 
 
@@ -719,7 +737,12 @@ header li .login:hover{
     /* ========== FAQ Section ========== */
     .answer{
         width: 100%;
-        margin: auto;
+        margin: 0 auto;
+        
+    }
+
+    .answer p{
+        margin-bottom: 10px;
     }
     /* ========== FAQ Section END ========== */
 
@@ -810,6 +833,35 @@ header li .login:hover{
         width: 90%;
         margin:  auto;
     }
+
+    /* ========== Extension Section END ========== */
+
+    /* ========== Features Section ========== */
+
+    .feature-tab .slider{
+        width: 100%;
+    }
+
+
+    #bookmark:checked ~ .feature-tab .slider{
+        bottom: -12px;
+        left: 0px;
+    }
+    #search:checked ~ .feature-tab .slider{
+        bottom: -75px;
+        left: 0px;
+    }
+     #share:checked ~ .feature-tab .slider{
+        bottom: -138px;
+        left: 0px;
+    }
+
+    .wrapper .feature-tab label {
+        font-size: .9rem;
+    }
+    
+
+    /* ========== Features Section END ========= */
 }
 
 
