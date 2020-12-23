@@ -353,7 +353,7 @@ input[type="radio"] {
 
 /* ========== Extension Section ========== */
 .extension-container {
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 .extension-browser {
@@ -427,7 +427,7 @@ input[type="radio"] {
 
 /* ========== FAQ Section ========== */
 .faq-container {
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 .questions {
@@ -469,7 +469,7 @@ input[type="radio"] {
 
 /* ========== Up to date Section ========== */
 .up-to-date-container {
-  margin-top: 80px;
+  margin-top: 150px;
   background-color: var(--Soft-Blue);
 }
 
